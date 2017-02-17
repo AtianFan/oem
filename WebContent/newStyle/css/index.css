@@ -1,0 +1,232 @@
+body {
+    font: 12px/1.5 "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif
+}
+
+.clearfix {}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.lbk {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.login-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: url(../img/bg.png) center top no-repeat;*/
+    background-size: 100% auto;
+}
+
+.header {
+    height: 70px;
+    background-color: #11171c;
+}
+
+.header .container {
+    width: 952px;
+    margin: 0 auto;
+    height: 70px;
+    padding: 0 100px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.main-nav {
+    float: left;
+    height: 70px;
+}
+
+.main-nav li {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 67px;
+    line-height: 67px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main-nav li .line {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #4e9bb8;
+}
+
+.main-nav li.curr {
+    background-color: #23313d;
+}
+
+.main-nav li.curr .line {
+    display: block;
+}
+
+.head-action {
+    float: left;
+    width: 120px;
+    height: 70px;
+}
+
+.head-action .en-chn {
+    margin: 20px 32px;
+    width: 60px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #23313d;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.log-rgt {
+    float: left;
+    width: 146px;
+    height: 70px;
+}
+
+.log-rgt-btn {
+    margin: 20px 8px 20px 38px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #4e9bb8;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form-control {
+    font: 20px "Microsoft Yahei";
+    color: #3e6372;
+}
+
+.login-container .content {
+    width: 340px;
+    margin: 0 auto;
+    padding: 0 0 10px 0;
+}
+
+.form-control input {
+    margin-top: 20px;
+    border: 1px solid rgba(131,146,157,0.4);
+    background: rgba(178,212, 220,1);
+    height: 42px;
+    width: 336px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+ 	font: 20px "Microsoft Yahei";
+ 	color:#fff;
+ 	text-indent: 3em;
+ 	outline: none;
+}
+input:-webkit-autofill { 
+-webkit-box-shadow: 0 0 0px 1000px rgba(26, 108, 136,0.1) inset; 
+}
+.form-control input:focus{
+	background-color: rgba(85,100,106,1);
+	border: 1px solid #a6b6c2;
+}
+
+/* 通用 */
+
+.form-control input::-webkit-input-placeholder {
+    font: 16px "Microsoft Yahei";
+    color: rgba(255, 255, 255, 0.8);
+    margin-left:20px;
+    text-indent: 3em;
+    line-height: 32px;
+}
+
+.form-control input::-moz-placeholder {
+    font: 16px "Microsoft Yahei";
+    color: rgba(255, 255, 255, 0.8);
+    margin-left:20px;
+    text-indent: 3em;
+    line-height: 32px;
+}
+
+
+/* firefox 19+ */
+
+.form-control input:-ms-input-placeholder {
+    font: 16px "Microsoft Yahei";
+    color: rgba(255, 255, 255, 0.8);
+    margin-left:20px;
+    margin-left:20px;
+    text-indent: 3em; 
+    line-height: 32px;
+}
+
+
+/* ie */
+
+.form-control input:-moz-placeholder {
+    font: 16px "Microsoft Yahei";
+    color: rgba(255, 255, 255, 0.8);
+    margin-left:20px;
+    margin-left:20px;
+    text-indent: 3em;
+}
+.login-container .btns{
+	width: 350px;
+    margin: 0 auto;
+}
+.login-container .btns span{
+	/* background: url(../img/btn_normal.png) 100% 100% no-repeat; */
+	padding: 5px 0;
+	color: #fff;
+	font: 16px "Microsoft Yahei";
+	margin-right: 123px;
+	text-align: center;
+	border-radius:5px;
+	width: 100px;
+	height:35px;
+	padding-top: 15px;
+}
+.login-container .login-btn{
+	background-color: rgb(85,175,238);
+}
+.login-container .register-btn{
+	background-color: #ff6900;
+}
+.login-container .login-btn:hover{
+	cursor:pointer;
+	background-color: #4c98d2;
+}
+.login-container .register-btn:hover{
+	cursor:pointer;
+	background-color: #f06504;
+}
+.login-container .btns span:last-child{
+	margin-right: 0;
+}
+/* .login-container .btns span.focus{
+	background: url(../img/btn_hover.png) 100% 100% no-repeat;
+}
+.login-container .btns span:hover{
+	background: url(../img/btn_hover.png) 100% 100% no-repeat;
+} */
+/* .login-container input:focus{
+	
+} */

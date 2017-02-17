@@ -1,0 +1,176 @@
+body{
+	background: #efeef4;
+}
+#registerForm {
+   /* position:absolute;
+   top:10%;
+   left:10%; 
+   width:500px;
+   font-size:20px;
+   font-weight:bloder;
+   text-align:center;*/
+   
+    width: 952px;
+    font-size: 20px;
+    font-weight: bloder;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#registerForm>div {
+	background: #efeef4;
+	width:500px;
+	height:60px;
+	font-size:18px;
+	font-weight:bloder;
+	width:auto;
+	text-align:center;
+	margin:5px;
+	border:0px;
+	box-shadow: inset 0 0 rgba(0,0,0,.075);
+    margin-top: 27px;
+}
+
+#registerForm > div > span {
+	/* position:absolute;
+	left:25px; */
+	width:100px;
+	height:20px;
+	line-height:20px;
+	text-align:left;
+    display: block;
+}
+
+#registerForm > div > input {
+	/* position: relative;
+	top:20px;
+	left: -50px; */
+	width: 350px;
+	height: 30px;
+	font-size:20px;
+	border: 0px;
+    background: #ffffff!important;
+    border-radius: 2px;
+    text-indent: 18px;
+    margin-top:8px;
+    display: block;
+    float: left;
+}
+
+#registerForm .foot {
+	position:absolute;
+	bottom:-100px;
+	left:4%;
+	height:24px;
+}
+
+#register {
+	position:absolute;
+	left:25%;
+	font-size:20px;
+	font-weight:bloder;
+	width:auto;
+	text-align:center;
+	margin:20px;
+}
+
+#registerForm  div  span#registerBtn {
+   	border-radius: 2px;
+    /* position: absolute; */
+    /* left: 25px; */
+    width: 280px;
+    height: 48px;
+    background-color: rgb(85,175,238);
+    line-height: 48px;
+    color: white;
+    display: inline-block;
+    margin-left: 15px;
+    text-align: center;
+}
+
+#registerForm  div  span#registerBtn:hover {
+	cursor:pointer;
+	background-color: rgb(7,127,218);
+}
+
+#regUpImg{
+	height: 100px;
+    width: 500px;
+}
+
+.regUpImgBtn{
+	/* position: absolute;
+    top: 20px;
+    left: 200px; */
+}
+
+.regUpImgBtn iframe{
+	 width: 340px;
+     height: 105px;
+}
+
+.form-group{
+	height: 120px!important;
+}
+
+.form-group h4{
+	/*  position: absolute;
+	 left: 26px; */
+	 text-align: left;
+}
+
+.form-group>img{
+	/* position: absolute;
+    left: 26px;
+    top: 30px; */
+    background: #e9e8ee;
+    display: block;
+}
+#registerForm > div > span.msg{
+	float: left;
+    height: 38px;
+    line-height: 54px;
+    color: red;
+    font-size: 16px;
+    width: 200px;
+    margin-left:10px;
+}
+#registerForm div.icon_img_div{
+	margin-top:10px;
+    text-align: left;
+    height: auto;
+    float: left;
+    margin-left: 0px;
+}
+#registerForm .regUpImgBtn{
+	/* position: relative; */
+  	width: 500px;
+    margin-top: 28px;
+}
+#registerForm #regUpImg{
+	/* position: relative;
+  	width: 500px;
+    margin-top: 28px; */
+    margin-left: 15px;
+}
+
+#registerForm .address_div input {
+	width: 100%;
+}
+/* #registerForm div:nth-child(6){
+	width: 200px;
+	height: 40px;
+}
+
+#registerForm > div:nth-child(7){
+	width: 200px;
+    position: absolute;
+    left: 229px;
+    top: 255px;
+    height: 40px;
+}
+
+#registerForm > div:nth-child(14) input{
+	width: 850px;
+    left: 6px;
+} */

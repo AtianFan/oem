@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/mvc
+    http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+	<!-- 注解探测器 -->
+	<!-- json转换需要加上次备注 -->
+	<mvc:annotation-driven />
+	<context:component-scan base-package="com.cishi.controller" />
+	<!-- 视图解析器，根据视图的名称new ModelAndView(name)，在配置文件查找对应的bean配置 -->
+	<bean class="org.springframework.web.servlet.view.BeanNameViewResolver">
+		<property name="order" value="1" />
+	</bean>
+	<!--处理 @ResponseBody 中文乱码问题 -->
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<bean
+					class="org.springframework.http.converter.StringHttpMessageConverter">
+					<property name="supportedMediaTypes">
+						<list>
+							<value>
+								text/html;charset=UTF-8
+							</value>
+						</list>
+					</property>
+				</bean>
+				<!-- 启动JSON格式的配置 -->
+				<bean id="jacksonMessageConverter"
+					class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+					<!-- 解决 HttpMediaTypeNotAcceptableException: Could not find acceptable 
+						representation -->
+					<property name="supportedMediaTypes">
+						<list>
+							<value>application/json;charset=UTF-8</value>
+						</list>
+					</property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+	<!-- 启动JSON格式的配置 <bean id="jacksonMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"> 
+		解决 HttpMediaTypeNotAcceptableException: Could not find acceptable representation 
+		<property name="supportedMediaTypes"> <list> <value>application/json;charset=UTF-8</value> 
+		</list> </property> </bean> @responsebody输出json <bean id="messageAdapter" 
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"> 
+		<property name="messageConverters"> <list> Support JSON <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" 
+		/> </list> </property> </bean> json异常会打印日志 <bean id="exceptionMessageAdapter" 
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver"> 
+		<property name="messageConverters"> <list> Support JSON <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" 
+		/> </list> </property> </bean> -->
+
+	<bean
+		class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter" />
+	<bean class="org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter" />
+	<bean
+		class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" />
+	<!-- 处理在类级别上的@RequestMapping注解 <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"> 
+		<property name="interceptors"> <list> <ref bean="commonInterceptor" /> </list> 
+		</property> </bean> -->
+	<!-- 需要注册adpater否则拦截器会报错 -->
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+	<bean id="commonInterceptor" class="com.pro.interceptor.MyInterceptor">
+		<property name="mappingURL" value="/PoliceSystem/*" />
+	</bean>
+	<!-- <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"> 
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/> 
+		</bean> -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+		p:prefix="/WEB-INF/jsp/" p:suffix=".jsp" />
+</beans>

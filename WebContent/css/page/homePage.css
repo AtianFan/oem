@@ -1,0 +1,141 @@
+body{
+	background: #efeef4;
+}
+
+.panel-heading{
+	background-color: #fff!important; 
+    border-color: #fff!important;
+}
+
+.bgImg{
+	width: 100%;
+    height: 155px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.sImg{
+	width: 38px;
+	height: 38px;
+	position: absolute;
+	bottom: 45px;
+	left: 10px;
+	border-radius: 30px;
+}
+
+.panel-heading{
+	position: relative;
+    top: 158px;
+    left: 55px;
+    width: 128px;
+    height: 35px;
+    text-align:left;
+    color: #436976!important;
+}
+
+.panel-heading h4,.panel-heading h1{
+	width: 150px;
+}
+
+.introduce{
+    position: relative;
+    top: 153px;
+    left: 70px;
+    width: 128px;
+    height: 35px;
+    text-align: left;
+    color: #4bebebe!important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #9e9c9c;
+}
+
+.money{
+	position: relative;
+    top: 101px;
+    right: 8px;
+    /* left: 300px; */
+    text-align:left;
+    color: #436976!important;
+    text-align:right;
+    font-size:22px;	
+}
+
+.btn-default{
+	position: absolute;
+    right: 9px;
+    top: 10px;
+    text-align: left;
+    width: 68px;
+    border-radius: 10px!important;
+}
+
+.panel a{
+	background: #bcd5dc;
+	text-align:left;
+}
+
+#recContentDiv,#taskContentDiv{
+	overflow: hidden;
+    width: 952px;
+    margin: 0 auto;
+    margin-top:26px;
+}
+#recContentDiv .col-lg-12, #taskContentDiv .col-lg-12{
+	position: absolute;
+	color: #436976;
+	left:165px;	
+}
+
+#recContentDiv .col-lg-12 h1,#taskContentDiv .col-lg-12 h1{
+	position: absolute;
+	font-size: 24px;
+}
+
+.rightImg{
+	position: absolute;
+    top: 21px;
+    right: 163px;
+    width: 8px;
+}
+
+.panel .btn{
+	
+} 
+
+#recContentDiv .rightImg,#taskContentDiv .rightImg{
+    right: 17px;
+}
+#recContentDiv .col-md-4,#taskContentDiv .col-md-4{
+	padding:0;
+	width: 284px;
+}
+/* #recContentDiv .col-md-4{
+	margin-right:20px;
+} */
+#recContentDiv .col-md-4:not(:nth-child(3n+1)),#taskContentDiv .col-md-4:not(:nth-child(3n+1)){
+	margin-right:50px;
+}
+.page-header{
+	text-align: left;
+	color:#436976;
+}
+h1.page-header img{
+	margin-left:13px;
+	margin-right:28px;
+} 
+h1.page-header{
+	font-size:20px;
+	color:rgb(62,99,114);
+	margin:0;
+}
+.ui-order-name{
+	font-size:16px;
+}
+.ui-detail-btn:hover{
+	background:rgb(255,105,0);
+}

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+  PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+  "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+	<tlib-version>1.2</tlib-version>
+	<jsp-version>1.1</jsp-version>
+	<short-name>myLib</short-name>
+	<uri>form-control</uri>
+<tag>
+	<name>formControl</name>
+	<tag-class>com.cishi.tag.form.FormControl</tag-class>
+	<body-content>empty</body-content>
+	<attribute>
+		<name>name</name>
+		<required>false</required>
+	</attribute>
+	<attribute>
+		<name>title</name>
+		<required>false</required>
+	</attribute>
+</tag>
+<tag>
+	<name>input</name>
+	<tag-class>com.cishi.tag.form.InputControl</tag-class>
+	<body-content>empty</body-content>
+	<attribute>
+		<name>name</name>
+		<required>true</required>
+	</attribute>
+	<attribute>
+		<name>type</name>
+		<required>false</required>
+	</attribute>
+	<attribute>
+		<name>defaultValue</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>title</name>
+		<required>false</required>
+	</attribute>
+	<attribute>
+		<name>class_tag</name>
+		<required>false</required>
+	</attribute>
+	<attribute>
+		<name>id</name>
+		<required>false</required>
+	</attribute>
+	<attribute>
+		<name>style</name>
+		<required>false</required>
+	</attribute>
+	<attribute>
+		<name>on_focus</name>
+		<required>false</required>
+	</attribute>
+	<attribute>
+		<name>on_blur</name>
+		<required>false</required>
+	</attribute>
+</tag>
+<tag>
+	<name>i18n</name>
+	<tag-class>com.cishi.tag.form.I18NTag</tag-class>
+	<body-content>empty</body-content>
+	<attribute>
+		<name>name</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+<tag>
+	<name>textarea</name>
+	<tag-class>com.cishi.tag.form.TextAreaControl</tag-class>
+	<body-content>empty</body-content>
+	<attribute>
+		<name>name</name>
+		<required>true</required>
+	</attribute>
+	<attribute>
+		<name>title</name>
+		<required>false</required>
+	</attribute>
+	<attribute>
+		<name>size</name>
+		<required>false</required>
+	</attribute>
+</tag>
+<tag>
+	<name>button</name>
+	<tag-class>com.cishi.tag.form.ButtonControl</tag-class>
+	<body-content>empty</body-content>
+	<attribute>
+		<name>name</name>
+		<required>false</required>
+	</attribute>
+	<attribute>
+		<name>title</name>
+		<required>true</required>
+	</attribute>
+	<attribute>
+		<name>id</name>
+		<required>false</required>
+	</attribute>
+	<attribute>
+		<name>type</name>
+		<required>false</required>
+	</attribute>
+</tag>
+<tag>
+	<name>a</name>
+	<tag-class>com.cishi.tag.form.AControl</tag-class>
+	<body-content>empty</body-content>
+	<attribute>
+		<name>title</name>
+		<required>true</required>
+	</attribute>
+	<attribute>
+		<name>href</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+<tag>
+	<name>select</name>
+	<tag-class>com.cishi.tag.form.SelectControl</tag-class>
+	<body-content>empty</body-content>
+	<attribute>
+		<name>url</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>id</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>title</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>name</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>data</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+<tag>
+	<name>Span</name>
+	<tag-class>com.cishi.tag.form.SpanControl</tag-class>
+	<body-content>empty</body-content>
+	<attribute>
+		<name>url</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>id</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>title</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>name</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>data</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+<tag>
+	<name>Option</name>
+	<tag-class>com.cishi.tag.form.OptionControl</tag-class>
+	<body-content>empty</body-content>
+	<attribute>
+		<name>url</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>id</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>title</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>name</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>data</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+</taglib>

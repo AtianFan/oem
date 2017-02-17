@@ -1,0 +1,47 @@
+package com.cishi.constant;
+
+public enum ErrorCode {
+	SUCCESS(0,"请求成功"),
+	VLIAD_SESSION_ERROR(-4,"会话错误，请重新登陆"),
+	HASLOGIN_TRUE(5,"用户名已经存在"),
+	HASLOGIN_FALSE(0,"用户名可以使用"),
+	LOGIN_SUCCESS(2,"登陆成功"),
+	UPLOAD_FAIL(-3,"上传失败"),
+	UPLOAD_SUCCESS(3,"上传成功"),
+
+	
+	
+	
+	
+	
+	
+	USER_AND_PASSWOD_NOT_NULL("101000","用户名和密码不能为空"),
+	//USER_NOT_FOUND(101001,"用户名不存在"),
+	PASSWORD_ERROR(101002,"用户名或者密码错误"),
+	
+	
+	
+	
+	
+	
+	
+	LOGIN_FAIL(-2,"登陆失败");
+	
+	
+	
+	
+	
+	private int retcode;
+	private String retmsg;
+	private ErrorCode(int retcode, String retmsg) {
+		this.retcode = retcode;
+		this.retmsg = retmsg;
+	}
+	public int getRetcode() {
+		return retcode;
+	}
+	public String getRetmsg() {
+		return retmsg;
+	}
+	
+}

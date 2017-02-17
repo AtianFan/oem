@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<!-- 引入配置文件 -->
+	<properties resource="sys_jdbc.properties" />
+	
+	<!-- 指定数据连接驱动jar地址 -->
+	<classPathEntry location="${classpath}"/>
+	<context id="context1" targetRuntime="MyBatis3">
+	    <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"/>
+	    <!-- 注释 -->  
+        <commentGenerator >  
+            <property name="suppressAllComments" value="false"/><!-- 是否取消注释 -->  
+            <property name="suppressDate" value="true" /> <!-- 是否生成注释代时间戳-->  
+        </commentGenerator>  
+		<jdbcConnection driverClass="${jdbc.user.driver}"
+			connectionURL="${jdbc.user.url}" userId="${jdbc.user.name}" password="${jdbc.user.password}" />
+		<javaModelGenerator targetPackage="com.cishi.beans"
+			targetProject="${project}" />
+		<sqlMapGenerator targetPackage="mybatis_mapper" targetProject="${project}" />
+		
+		<javaClientGenerator targetPackage="com.cishi.dao"
+			targetProject="${project}" type="XMLMAPPER" />
+			<table schema="${jdbc.user.db}" tableName="order_type"
+		    domainObjectName="OrderType" enableCountByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true"  
+            enableUpdateByExample="true"
+		    ></table>
+			<!--<table schema="${jdbc.user.db}" tableName="sys_trade_info"
+		    domainObjectName="SysTradeInfo" enableCountByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true"  
+            enableUpdateByExample="true"
+		    ></table><table schema="${jdbc.user.db}" tableName="order_receive"
+		    domainObjectName="OrderReceive" enableCountByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true"  
+            enableUpdateByExample="true"
+		    >
+		    </table>
+			<table schema="${jdbc.user.db}" tableName="sys_confirm"
+		    domainObjectName="SysConfirm" enableCountByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true"  
+            enableUpdateByExample="true"
+		    ></table>
+		
+			<table schema="${jdbc.user.db}" tableName="order_task"
+		    domainObjectName="OrderTask" enableCountByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true"  
+            enableUpdateByExample="true"
+		    >
+		</table>
+		
+		 
+		<table schema="${jdbc.user.db}" tableName="sys_user"
+		    domainObjectName="SysUser" enableCountByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true"  
+            enableUpdateByExample="true"
+		    >
+		</table>-->
+		<!-- <table schema="${jdbc.user.db}" tableName="order_remark"
+		    domainObjectName="OrderRemark" enableCountByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true"  
+            enableUpdateByExample="true"
+		    >
+		</table>
+		<table schema="${jdbc.user.db}" tableName="sys_user"
+		    domainObjectName="SysUser" enableCountByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true"  
+            enableUpdateByExample="true"
+		    >
+		</table>
+		<table schema="${jdbc.user.db}" tableName="order_receive"
+		    domainObjectName="OrderReceive" enableCountByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true"  
+            enableUpdateByExample="true"
+		    >
+		</table>
+		<table schema="${jdbc.user.db}" tableName="sys_company"
+		    domainObjectName="SysCompany" enableCountByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true"  
+            enableUpdateByExample="true"
+		    >
+		</table>
+		<table schema="${jdbc.user.db}" tableName="sys_field"
+		    domainObjectName="SysField" enableCountByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true"  
+            enableUpdateByExample="true"
+		    >
+		</table>
+		<table schema="${jdbc.user.db}" tableName="sys_file"
+		    domainObjectName="SysFile" enableCountByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true"  
+            enableUpdateByExample="true"
+		    >
+		</table>
+		<table schema="${jdbc.user.db}" tableName="order_task"
+		    domainObjectName="OrderTask" enableCountByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true"  
+            enableUpdateByExample="true"
+		    >
+		</table>
+		<table schema="${jdbc.user.db}" tableName="sys_score"
+		    domainObjectName="SysScore" enableCountByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true"  
+            enableUpdateByExample="true"
+		    >
+		</table>
+		<table schema="${jdbc.user.db}" tableName="order_type"
+		    domainObjectName="OrderType" enableCountByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true"  
+            enableUpdateByExample="true"
+		    >
+		</table> -->
+	</context>
+</generatorConfiguration>

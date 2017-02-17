@@ -1,0 +1,360 @@
+#applay_for_money {
+	display: none;
+}
+
+.img-responsive {
+	width: 480px;
+	height: 330px !important;
+	border-radius: 20px;
+}
+
+#subTaskList img {
+	object-fit: cover;
+}
+
+.container {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.container .detail_panel {
+	background-color: #B2D4DC;
+	height: 400px;
+}
+
+.detail_info_div {
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 929px;
+}
+
+.container .detail_panel .detail_img {
+	width: 547px;
+	height: 367px;
+	overflow: hidden;
+}
+
+.container .detail_info_div .detail_img, .container .detail_info_div .detail_info
+	{
+	float: left;
+}
+
+.container .detail_info_div .detail_info {
+	width: 380px;
+}
+
+.container .detail_info_div .detail_info .order_name {
+	margin-left: 20px;
+	font-size: 22px;
+	color: rgb(35, 49, 61);
+	width: 280px;
+	float: left;
+	text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+.container .detail_info_div .detail_info .detail_title:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+.container .detail_info_div .detail_info .order_status {
+	color: rgb(255, 105, 0);
+	text-decoration: underline;
+	float: right;
+	font-size: 14px;
+}
+
+.container .detail_info_div .detail_info .order_status:after {
+	clear: both;
+	display: block;
+	content: '';
+}
+
+.container .detail_info_div .detail_info .order_price {
+	margin-left: 60px;
+	margin-top: 30px;
+}
+
+.container .detail_info_div .detail_info .price {
+	font-size: 14px;
+	color: rgb(35, 49, 21);
+	display: inline;
+}
+
+.container .detail_info_div .detail_info .money {
+	font-size: 34px;
+	color: rgb(35, 49, 61);
+	display: inline;
+	margin-left: 60px;
+}
+
+.container .detail_info_div:after {
+	clear: both;
+	display: block;
+	content: '';
+}
+
+.modify_btn, .add_sub_task_btn, .release_btn {
+	width: 280px;
+	height: 35px;
+	border-radius: 2px;
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+	margin-top: 9px;
+	margin-left: 60px;
+}
+
+.modify_btn {
+	background-color: rgb(96, 144, 171);
+}
+
+.modify_btn:hover {
+	background-color: rgb(75, 112, 113);
+}
+
+.add_sub_task_btn {
+	background-color: rgb(29, 124, 176);
+}
+
+.add_sub_task_btn:hover {
+	background-color: rgb(75, 112, 113);
+}
+
+.release_btn {
+	background-color: rgb(15, 144, 210);
+}
+
+.detail_info .line {
+	width: 352px;
+	margin-left: 20px;
+	height: 2px;
+	background-color: rgb(205, 226, 230);
+	margin-top: 10px;
+}
+
+.detail_info_div h3 {
+	font-size: 22px;
+	padding-bottom: 8px;
+	color: rgb(35, 49, 61)
+}
+
+.page-header {
+	padding-bottom: 8px;
+	border-bottom: 1px solid rgb(220, 220, 255);
+}
+
+#fileListDiv_class {
+	padding: 10px 50px;
+	width: 929px;
+	/* height:90px; */
+	background-color: rgb(232, 234, 240);
+	border: 1px solid rgb(131, 146, 157);
+	font-size: 14px;
+	color: rgb(64, 99, 114);
+}
+
+#attachmentDiv_class {
+	padding: 10px 50px;
+	width: 929px;
+	/* height:90px; */
+	background-color: rgb(232, 234, 240);
+	border: 1px solid rgb(131, 146, 157);
+	font-size: 14px;
+	color: rgb(64, 99, 114);
+}
+
+.table_info {
+	cellpadding: 0;
+	cellspacing: 0;
+	width: 931px;
+	margin: 0 auto;
+	margin-bottom: 12px;
+}
+
+.table_info thead tr {
+	height: 38px;
+	background-color: rgb(174, 209, 217);
+}
+
+.table_info tbody tr {
+	height: 177px;
+}
+
+.table_info td, .table_info th {
+	border: 0.5px solid rgb(131, 146, 157);
+	text-align: center;
+}
+
+.view_info_btn {
+	width: 120px;
+	height: 30px;
+	color: rgb(255, 255, 255);
+	border-radius: 2px;
+	background-color: rgb(85, 172, 238);
+	font-size: 14px;
+	display: block;
+	line-height: 30px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.view_info_btn:hover {
+	background-color: rgb(29, 124, 176);
+}
+
+table.gree_body tbody {
+	background-color: rgb(232, 234, 240);
+}
+
+table.gree_body tbody td {
+	border: 1px solid rgb(131, 146, 157);
+}
+
+table.gree_body tbody td.loginName {
+	font-size: 14px;
+	color: rgb(35, 49, 61);
+	text-decoration: underline;
+}
+
+.apply_info {
+	width: 908px;
+	height: 38px;
+	text-align: center;
+	font-size: 22px;
+	color: rgb(255, 255, 255);
+	background: rgb(62, 99, 104);
+	line-height: 38px;
+	margin-bottom: 0;
+}
+
+#applyInfoList {
+	width: 908px;
+	background-color: rgb(237, 237, 238);
+	border: 1px solid rgb(131, 146, 157);
+	padding-bottom: 40px;
+}
+
+#applyInfoList thead tr {
+	height: 36px;
+	border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+#applyInfoList thead th {
+	font-size: 14px;
+	color: rgb(35, 49, 61);
+	text-align: center;
+	text-decoration: underline;
+}
+
+#applyInfoList tbody td {
+	padding-top: 15px;
+}
+
+#applyInfoList tbody td {
+	font-size: 14px;
+	color: rgb(125, 125, 125);
+	text-align: center;
+}
+
+#applyInfoList tbody tr:last-child td {
+	padding-bottom: 40px;
+}
+
+#detail_apply_info_list {
+	margin-left: 60px;
+	font-size: 14px;
+	color: rgb(35, 49, 61);
+	margin-top: 15px;
+	padding-bottom: 15px;
+}
+
+#detail_apply_info_list p:FIRST-CHILD {
+	text-decoration: underline;
+}
+
+.detail_panel {
+	position: relative;
+}
+
+.detail_info .btns_list {
+	position: absolute;
+	bottom: 32px;
+}
+
+.detail_info .btns_list>a {
+	display: block;
+}
+
+.order-detail {
+	width: 1152px;
+	margin: 0 auto;
+	background: #efeef4;
+}
+
+.order-detail .row {
+	padding: 0;
+	margin: 0;
+}
+
+.chrild_img {
+	margin:0 auto;
+	width: 200px;
+	height: 100px;
+	vertical-align: middle;
+	border-radius: 0px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.xttblog {
+	width: 800px;
+}
+
+.box {
+	mlist-style-type: none;
+}
+
+.box:after {
+	content: ".";
+	display: block;
+	line-height: 0;
+	width: 0;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+.box li {
+	float: left;
+	line-height: 60px;
+	width: 120px;
+	height: 120px;
+	position:relative;
+}
+
+.box li img, .box li img:visited {
+	display: block;
+	width: 110px;
+	height: 110px;
+	text-align: left;
+	margin-right: 8px;
+}
+
+.deleteButton {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	height: 25px;
+	padding: 0 10px;
+	line-height: 25px;
+	color: #23313d;
+	background-color: #b2d4dc;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	text-decoration: none;
+}

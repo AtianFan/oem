@@ -1,0 +1,46 @@
+.blue-btn, .green-btn {
+	/* padding: 5px 0; */
+	color: #fff;
+	font: 16px "Microsoft Yahei";
+	width: 100px;
+	text-align: center;
+	display: inline-block;
+	height: 32px;
+	line-height:32px;
+	border: none;
+}
+
+.blue-btn {
+	background: rgb(85,175,238);
+	background-size: 100% 100%;
+	border-radius:5px;
+}
+
+.green-btn {
+	background: rgb(4,178,147);
+	background-size: 100% 100%;
+	border-radius:5px;
+}
+
+.blue-btn:hover {
+	cursor: pointer;
+	background:#4c98d2;
+	background-size: 100% 100%;
+}
+
+.green-btn:hover {
+	cursor: pointer;
+	background: rgb(2,163,134);
+	background-size: 100% 100%;
+}
+option{
+	background:rgb(178,212,220);
+	color:black;
+	font-size:16px;
+	height:32px;
+	line-height:32px;
+	display: block;
+}
+option:focus{
+	color:rgb(255,255,255);
+}

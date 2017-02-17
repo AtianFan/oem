@@ -1,0 +1,62 @@
+body {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	background-color: #DFFFDF;
+}
+
+#container {
+	position: absolute;
+	left: 20%;
+	top: 91px;
+	width: 900px;
+	height: 600px;
+}
+
+#userTable {
+	width: 100%;
+	height: 60%;
+}
+
+#user-table-nav>ul {
+	position: absolute;
+	right: 0%;
+	padding: 0;
+	margin: 0;
+}
+
+#user-table-nav .pagination {
+	margin: 5px 0;
+}
+
+#user-table-nav ul li a {
+	width: 60px;
+}
+
+#taskContainer {
+	position: absolute;
+	left: 20%;
+	top: 500px;
+	width: 900px;
+	height: 600px;
+}
+
+#taskTable {
+	width: 100%;
+	height: 60%;
+}
+
+#task-table-nav>ul {
+	position: absolute;
+	right: 0%;
+	padding: 0;
+	margin: 0;
+}
+
+#task-table-nav .pagination {
+	margin: 5px 0;
+}
+
+#task-table-nav ul li a {
+	width: 60px;
+}

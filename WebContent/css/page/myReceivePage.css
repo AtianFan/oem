@@ -1,0 +1,11 @@
+body{
+	background: #efeef4;
+}
+
+#taskContentDiv .col-md-7{
+	width: 40%;
+}
+
+#taskContentDiv .col-md-5{
+	width: 60%
+}

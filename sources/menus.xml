@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!-- 发包方:1,接包方:2,未登录用户:3-->
+<menus>
+	<menu url="homePage" name="homePage" permission="2,3"/>
+	<menu url="mainPage" name="mainPage"  permission="2,3"/>
+	<!-- <menu url="rechargePage" name="recharge"  permission="1,2"/> -->
+	<!-- <menu url="myReceiveTask" name="my_task"  permission="1,2"/> -->
+	<!-- <menu url="modifyUserInfo" name="modifyUserInfo"  permission="1,2"/> -->
+	<!-- <menu url="modifyPwd" name="modifyPwd"  permission="1,2"/> -->
+	<!-- <menu url="orderTaskAdd" name="add_task"  permission="1"/> -->
+	<menu isparent="1" permission="1" name="myTask">
+		<menu  name="releaseTask" styleclass="blue-btn"  icon="icon-pencil" liClass="bdb" url="orderTaskAdd"/>
+		<menu param="status=0" name="wait_for_release_task" styleclass="common-head-btn" url="myReceiveTask"/>
+		<menu param="status=2" name="running_task" styleclass="common-head-btn" url="myReceiveTask"/>
+		<menu param="complate=1" name="has_complated" styleclass="common-head-btn" url="myReceiveTask"/>
+		<menu name="all_task" styleclass="common-head-btn" url="mainPage"/>
+	</menu>
+	<menu isparent="1" permission="2" name="myTask">
+		<menu param="status=0" name="wait_for_accept" styleclass="common-head-btn" url="myReceiveTask"/>
+		<menu param="status=1" name="running_task" styleclass="common-head-btn" url="myReceiveTask"/>
+		<menu param="complate=1" name="has_complated" styleclass="common-head-btn" url="myReceiveTask"/>
+		<menu param="all=1" name="all_task" styleclass="common-head-btn" url="myReceiveTask"/>
+	</menu>
+	<!-- <menu type="icon" name="adminInfo"  permission="1,2" isparent="1" line="false">
+	    <menu name="personInfo" styleclass="blue-btn"  icon="icon-pencil" liClass="bdb" url="modifyUserInfo"/>
+		<menu name="modifyPwd" styleclass="common-head-btn" url="modifyPwd"/>
+		<menu name="logout" styleclass="red-btn" url="logout"/>
+	</menu> -->
+</menus>

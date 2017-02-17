@@ -1,0 +1,70 @@
+@CHARSET "UTF-8";
+#content{
+	background-image: url(../../image/join/bg.jpg);
+	width: 1152px;
+	height: 680px;
+}
+#content>div{
+	float:left;
+}
+#content p{
+	height: 20px;
+	line-height: 20px;
+	margin-bottom:25px;
+}
+#content>div:after{
+	clear:both;
+	content:'';
+	display: block;
+}
+#content .title,#content .right p{
+	color:rgb(255,255,255);
+	font-size:20px;
+}
+#content .value{
+	color:rgb(209,209,209);
+	font-size:20px;
+}
+#content .left{
+	width: 380px;
+	margin-top:107px;
+	margin-left:107px;
+}
+#content .right{
+	margin-top:94px;
+	margin-left:100px;
+	width: 427px;
+}
+#content .right input{
+	font-size:16px;
+	width: 427px;height: 38px;
+	border-radius:4px;
+	margin-bottom:15px;
+	border:none;
+}
+#content .right input:active,#content .right input:focus,#content .right textarea:focus{
+	background-color:rgb(178,212,219);
+	color:rgb(35,49,61);
+}
+#content .right textarea{
+	width: 427px;
+	height: 150px;
+	border-radius:4px;
+}
+#content .right .btn{
+	width:234px;
+	height:50px;
+	line-height:50px;
+	display: block;
+	font-size: 20px;
+	color:rgb(255,255,255);
+	border-radius:4px;
+	background-color: rgb(13,188,172);
+	margin-right:0;
+	margin-top:20px;
+	float:right;
+	padding:0;
+}
+#content .right .btn:active{
+	background-color: rgb(8,140,240);
+}
