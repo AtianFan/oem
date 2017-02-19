@@ -226,7 +226,7 @@ var OrderDetail = {
 									var file = files[key], name = file.fileName, originName = file.originName, date = file.createDate;
 									if(isPic(Utils.getFilePath(1, date, name))){
 										var $a = $("<li><a target='_blank' href='"+Utils.getFilePath(1, date, name)+"'><img  src='" + Utils.getFilePath(1, date, name) + "'></img></a></li>");
-										$("#box").prepend($a);
+										//$("#box").prepend($a);
 									}else{
 										$("#fileListDiv_class").prepend(
 											OrderDetail.fileTemplate.replace(/\{url\}/g,Utils.getFilePath(1, date,name)).replace(/\{originName\}/g,originName)
