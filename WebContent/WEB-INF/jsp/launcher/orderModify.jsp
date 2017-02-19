@@ -120,10 +120,10 @@
 							</div>
 						</div>
 						<input type="hidden" value="" name="childrensIds" />
-						<button type="button" class="green-btn" id="addTaskBtn">
+						<button type="button" class="green-btn" id="addTaskBtn" style="width: 100px; height: 32px;">
 							<form:i18n name="modifyTask" />
 						</button>
-						<button type="button" class="green-btn" id="cancleTaskBtn">
+						<button type="button" class="green-btn" id="cancleTaskBtn" style="width: 100px; height: 32px;">
 							<form:i18n name="cancle" />
 						</button>
 					</div>

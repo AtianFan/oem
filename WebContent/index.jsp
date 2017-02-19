@@ -8,7 +8,7 @@
 </head>
 <body>
 <%
-	request.getRequestDispatcher("/Page/homePage").forward(request, response);
+	response.sendRedirect("/oem/Page/homePage");
 %>
 </body>
 </html>

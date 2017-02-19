@@ -168,7 +168,7 @@
 			%>
 			<div class="log-rgt">
 				<div class="log-rgt-btn">
-					<a href="${basePath}Page/login"> <form:i18n name="loginOrRegister" />
+					<a href="login"> <form:i18n name="loginOrRegister" />
 					</a>
 				</div>
 			</div>

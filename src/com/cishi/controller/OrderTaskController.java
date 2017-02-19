@@ -80,6 +80,7 @@ public class OrderTaskController extends BaseController {
 	@ResponseBody
 	@RequestMapping(value = "addTask", method = RequestMethod.POST)
 	public ResponseData<OrderTask> addTask(@RequestParam("requestList") String requestList) {
+		String msg = "发起成功";
 		ResponseData responseData = this.getNewResponseData();
 		SysUser sysUser = (SysUser) session.getAttribute("sysUser");
 		if (sysUser == null || sysUser.getId() == null) {
@@ -88,9 +89,13 @@ public class OrderTaskController extends BaseController {
 		}
 		String launcherId = sysUser.getId();
 		OrderTaskView orderTaskView = (OrderTaskView) DataToClassUtil.toClassData(requestList, OrderTaskView.class);
+		if(orderTaskView.getId()!=null){
+			msg = "修改成功";
+		}
 		orderTaskView.setLauncherId(launcherId);
 		OrderTask orderTask = orderTaskService.addOrderTask(orderTaskView, responseData);
 		responseData.setData(orderTask);
+		responseData.setMsg(msg);
 		return responseData;
 	}
 

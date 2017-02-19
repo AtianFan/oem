@@ -14,7 +14,7 @@ var OrderTaskAdd = {
 			
 			console.log(resp);
 			if (resp.retcode == 0) {
-				alert("发起成功");
+				alert(resp.msg);
 				var order = resp.data,
 					id = null;
 				if(order.parentId && order.parentId!='-1'){
