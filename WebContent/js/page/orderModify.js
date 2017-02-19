@@ -6,7 +6,8 @@ OemGlobal.on("TASK_DETAIL_LOAD_SUCCESS_EVENT",function(resp){
 		OemGlobal.emit("TASK_ADD_EVENT",true);
 	});
 	$("#cancleTaskBtn").click(function() {
-		history.go(-1);
+		window.location.href = basePath+"Page/mainPage";
+		//history.go(-1);
 	});
 	window.initFileList(resp.data.sysFileList);
 },this);
